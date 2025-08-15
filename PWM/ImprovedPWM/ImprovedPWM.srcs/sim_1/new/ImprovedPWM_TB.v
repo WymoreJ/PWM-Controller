@@ -27,8 +27,10 @@ module ImprovedPWM_TB();
 	reg iReset;
 	reg [N_BIT:0] iDutyCycle;
 	reg [TIMER_SIZE - 1 : 0] TIMER_LENGTH;
+	
 	//output declaration
 	wire oPWM;
+	
 	//parameter declaration
 	parameter N_BIT = 8;
 	parameter TIMER_SIZE = 15;
@@ -50,9 +52,10 @@ module ImprovedPWM_TB();
 	end
 	
 	initial begin
-	//initialization
+		//initialization
 		iReset = 1'b0;
 		iDutyCycle = 'b0;
+		TIMER_LENGTH = 'b0;
 	end
 	
 	initial begin

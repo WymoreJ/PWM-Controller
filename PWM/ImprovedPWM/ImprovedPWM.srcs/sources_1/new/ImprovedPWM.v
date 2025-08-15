@@ -64,7 +64,7 @@ module ImprovedPWM #(parameter N_BIT = 8, TIMER_SIZE = 15)(
     Timer #(.TIMER_BITS(TIMER_SIZE)) timer1(
     .iClk(iClk),
     .iReset(iReset),
-    .enable(1'b0),
+    .enable(1'b1),
     .TIMER_LENGTH(TIMER_LENGTH),
     .done(tick)
     );
